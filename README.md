@@ -8,3 +8,18 @@ ubuntu 18.04
 - cd My_tmux.conf
 - cp tmux.conf ~/.tmux.conf
 - tmux source ~/.tmux.conf
+
+# Troubleshooting
+
+**If there is garbled.**
+
+Reason: Check your terminal, and modifying the code under the .tmux.conf .
+
+Example : (oh my zsh)
+```
+#Enable oh my zsh in tmux
+set -g default-command /bin/zsh
+
+#Enable bash in tmux
+#set -g default-command /bin/bash
+```
